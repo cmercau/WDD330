@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Week 01</title>
+  <script>
+  </script>
+
+  <style>
+  </style>
+</head>
+
+<body>
+	<h1>Week 01 Team Activity</h1>
+	<input type="text" id="input">
+	<button type="button" id="btnInput" onclick="readInputWriteOutput()">Write to Div</button>
+	<div id="output1"></div>
+	<script>
+		function readInputWriteOutput(){
+			let input = document.getElementById('input').value;
+			let output = document.getElementById('output1').value;
+			output.innerHTML = input;
+		}
+		
+		// part 2
+		function sumNumbers() {
+			let num = document.getElementById('numberToSum').value;
+			let total = 0;
+			for (let i=0; i < num; i++;){
+				total += i;
+			}
+		}
+		
+	</script>
+</body>
+</html>
